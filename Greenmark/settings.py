@@ -48,8 +48,6 @@ INSTALLED_APPS = [
     'aboutus',
     'home',
     'portfolio',
-    'fontawesomefree',
-    'django_social_share',
 
 ]
 
@@ -188,7 +186,7 @@ CKEDITOR_CONFIGS = {
             ['Link', 'Unlink', 'Anchor'],
             ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
             ['Styles', 'Format', 'Font', 'FontSize'],
-            ['TextColor', 'BGColor'],
+
             ['Maximize', 'ShowBlocks', '-', 'About', 'pbckcode'],
         ),
     }
