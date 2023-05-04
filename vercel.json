@@ -1,16 +1,16 @@
-// vercel-django-example/vercel.json
-// https://github.com/jayhale/vercel-django-example/blob/main/vercel.json#L1
-
 {
-    "builds": [{
-        "src": "greenmark/wsgi.py",
-        "use": "@ardnt/greenmark-wsgi",
-        "config": { "maxLambdaSize": "15mb" }
-    }],
+    "builds": [
+      {
+        "src": "Greenmark/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+      }
+    ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "greenmark/wsgi.py"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "Greenmark/wsgi.py"
+      }
     ]
-}
+  }
+  
